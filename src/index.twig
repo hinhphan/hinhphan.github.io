@@ -7,14 +7,16 @@
 {% block content %}
     <div class="posts__container py-3">
         <div class="card-columns">
-            <div class="card hvr-float mb-5">
-                <img class="card-img-top" src="https://placehold.co/1630x860"></img>
-                <div class="card-body">
-                    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ...</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate sed ab nobis odit dolor corrupti doloribus! Tenetur quod fugiat quo. Nisi saepe aliquam, omnis veritatis expedita quis maiores ab quod.</p>
+            {% for post in index.posts %}
+                <div class="card hvr-float mb-5">
+                    <img class="card-img-top" src="{{ post.image }}"></img>
+                    <div class="card-body">
+                        <h2>{{ post.title }}</h2>
+                        <p>{{ post.content }}</p>
+                    </div>
+                    <a href="{{ post.url }}" class="stretched-link"></a>
                 </div>
-                <a href="#" class="stretched-link"></a>
-            </div>
+            {% endfor %}
         </div>
     </div>
 {% endblock %}

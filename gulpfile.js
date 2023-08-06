@@ -14,11 +14,12 @@ task('resources:watch', () => {
 })
 
 task('twig', () => {
-    var data = require("./src/data").getData();
-console.log(data);
+    delete require.cache[require.resolve("./src/data")]
+    var data = require("./src/data");
+
     return src('src/**/[^_]*.twig')
         .pipe(twig({
-            data: data
+            data: data.getData()
         }))
         .pipe(dest('public'))
 })
@@ -42,6 +43,14 @@ task('dev:serve', () => {
         }
     });
 })
+
+task('build', series([
+    'public:clean',
+    parallel([
+        'resources',
+        'twig'
+    ]),
+]))
 
 task('dev', series([
     'public:clean',
