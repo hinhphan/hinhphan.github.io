@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp-twig": "^1.2.0",
+    "rimraf": "^5.0.1",
+    "twig": "^1.16.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

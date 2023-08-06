@@ -1,0 +1,36 @@
+/* Extra small */
+@media screen and (max-width: 575px) {
+    
+}
+
+/* Small */
+@media screen and (min-width: 576px) {
+    .card-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+
+/* Medium */
+@media screen and (min-width: 768px) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+/* Large */
+@media screen and (min-width: 992px) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+/* Extra large */
+@media screen and (min-width: 1200px) {
+    
+}
