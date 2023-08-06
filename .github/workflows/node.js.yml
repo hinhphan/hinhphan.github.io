@@ -29,3 +29,4 @@ jobs:
     - run: npm install
     - run: npm install --global gulp-cli
     - run: gulp build
+    - run: ls -l -a
