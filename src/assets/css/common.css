@@ -34,3 +34,17 @@
 @media screen and (min-width: 1200px) {
     
 }
+
+/* Post Style */
+.post__content {
+    max-width: 650px;
+}
+
+.post__content h1 {
+    font-family: 'Roboto Slab', serif;
+}
+
+.post__content img {
+    width: 100%;
+}
+/* Post Style */

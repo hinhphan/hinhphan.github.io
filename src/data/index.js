@@ -1,44 +1,17 @@
 let data = {
     index: {
-        title: 'Trang Chủ - Phan Hinh',
+        title: 'Trang Chủ | Phan Hinh',
         posts: [
             {
-                image: 'https://placehold.co/1630x860',
-                title: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ...',
-                content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate sed ab nobis odit dolor corrupti doloribus! Tenetur quod fugiat quo...',
-                url: '#'
+                image: '/assets/images/0.png',
+                title: '[L0000] Tìm hiểu về framework Laravel',
+                content: 'Cách mình tiếp cận các công nghệ không dựa hoàn toàn theo hướng học thuật từ đầu nên có thể sẽ có sai sót trong cách điễn đạt, nhưng mình mong muốn có thể đem đến cái nhìn dễ hiểu nhất về lập trình...',
+                url: '/laravel/posts/0'
             },
-            {
-                image: 'https://placehold.co/1630x860',
-                title: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ...',
-                content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate sed ab nobis odit dolor corrupti doloribus! Tenetur quod fugiat quo...',
-                url: '#'
-            },
-            {
-                image: 'https://placehold.co/1630x860',
-                title: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ...',
-                content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate sed ab nobis odit dolor corrupti doloribus! Tenetur quod fugiat quo...',
-                url: '#'
-            },
-            {
-                image: 'https://placehold.co/1630x860',
-                title: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ...',
-                content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate sed ab nobis odit dolor corrupti doloribus! Tenetur quod fugiat quo...',
-                url: '#'
-            },
-            {
-                image: 'https://placehold.co/1630x860',
-                title: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ...',
-                content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate sed ab nobis odit dolor corrupti doloribus! Tenetur quod fugiat quo...',
-                url: '#'
-            },
-            {
-                image: 'https://placehold.co/1630x860',
-                title: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ...',
-                content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate sed ab nobis odit dolor corrupti doloribus! Tenetur quod fugiat quo...',
-                url: '#'
-            }
         ]
+    },
+    laravel: {
+        
     }
 }
 
