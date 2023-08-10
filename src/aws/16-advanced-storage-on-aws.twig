@@ -1,0 +1,33 @@
+{% extends "../layouts/_master.twig" %}
+
+{% block title %}
+	[A0016] Advanced Storage on AWS | Phan Hinh
+{% endblock %}
+
+{% block content %}
+	<div class="post__content py-3 mx-auto">
+		<h1 class="mb-4">[A0016] Advanced Storage on AWS</h1>
+        <div>
+			<p><strong>Lưu ý:</strong> Các bài mình viết mang tính chất Note lại kiến thức đang học, nếu có sai sót mong các bạn thông cảm 🥲.</p>
+            <p>À, còn một điều nữa là mình đang học khóa của <a href="https://www.udemy.com/user/stephane-maarek/" target="_blank" rel="noopener noreferrer">Stephane Maarek</a>, nên nội dung mình Note có thể giống <s>giống y hệt</s>. Mà mình không biết lên các mục như nào nên mình dùng các mục như chương trình học kia luôn và sẽ bổ sung thêm các phần khác (<s>Nếu mình chăm :v</s>).</p>
+            <p>Nếu có điều kiện các bạn hãy ủng hộ tác giả để họ có động lực tạo ra các khóa học khác hay hơn nữa nhé 😁. Link khóa học mình để bên dưới:</p>
+            <div class="callout callout-info">
+                <a href="https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/" target="_blank" rel="noopener noreferrer">Ultimate AWS Certified Solutions Architect Associate SAA-C03</a>
+            </div>
+
+            <hr>
+
+            <h2>1. AWS Snow Family</h2>
+            <p>- Mình hiểu cái này là những thiết bị vật lý giúp chúng ta chuyển dữ liệu từ ngoài lên AWS hoặc từ AWS ra bên ngoài</p>
+            <p>- Câu hỏi đặt ra là có mạng kết nối đến AWS là chuyển dữ liệu ra vào được rồi, sao còn phải dùng cái trên?</p>
+            <p>Đó là do giới hạn về thời gian Truyền khi sử dụng mạng đến AWS khi cần truyền một lượng lớn dữ liệu lên tới 100TB (Terabyte), 1PB (Petabyte) và hơn thế là rất mất nhiều thời gian.</p>
+            <p>- Hiện tại có 3 loại sau: </p>
+            <table class="table table-bordered">
+                <thead>
+                    
+                </thead>
+            </table>
+        </div>
+    </div>
+    <script src="https://utteranc.es/client.js" repo="hinhphan/hinhphan.github.io-comments" issue-term="A0016" theme="github-light" crossorigin="anonymous" async></script>
+{% endblock %}

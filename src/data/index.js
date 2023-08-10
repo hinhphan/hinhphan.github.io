@@ -3,10 +3,10 @@ let data = {
         title: 'Trang Chủ | Phan Hinh',
         posts: [
             {
-                image: '/assets/images/0.png',
-                title: '[L0000] Tìm hiểu về framework Laravel',
-                content: 'Cách mình tiếp cận các công nghệ không dựa hoàn toàn theo hướng học thuật từ đầu nên có thể sẽ có sai sót trong cách điễn đạt, nhưng mình mong muốn có thể đem đến cái nhìn dễ hiểu nhất về lập trình...',
-                url: '/laravel/posts/0'
+                image: '/assets/images/Snowball-Edge.jpg',
+                title: '[A0016] Advanced Storage on AWS',
+                content: 'Tìm hiểu về AWS Snow Family, FSx, Storage Gateway, Transfer Family, Data Sync,...',
+                url: '/aws/16-advanced-storage-on-aws.html'
             },
         ]
     },
