@@ -18,15 +18,50 @@
             <hr>
 
             <h2>1. AWS Snow Family</h2>
-            <p>- Mình hiểu cái này là những thiết bị vật lý giúp chúng ta chuyển dữ liệu từ ngoài lên AWS hoặc từ AWS ra bên ngoài</p>
+            <p>- Mình hiểu cái này là những <b>thiết bị vật lý</b> giúp chúng ta <b>chuyển dữ liệu</b> từ ngoài lên AWS hoặc từ AWS ra bên ngoài</p>
             <p>- Câu hỏi đặt ra là có mạng kết nối đến AWS là chuyển dữ liệu ra vào được rồi, sao còn phải dùng cái trên?</p>
-            <p>Đó là do giới hạn về thời gian Truyền khi sử dụng mạng đến AWS khi cần truyền một lượng lớn dữ liệu lên tới 100TB (Terabyte), 1PB (Petabyte) và hơn thế là rất mất nhiều thời gian.</p>
+            <p>Đó là do giới hạn về thời gian truyền khi sử dụng mạng đến AWS khi cần truyền một lượng lớn dữ liệu lên tới 100TB (Terabyte), 1PB (Petabyte) và hơn thế là rất mất nhiều thời gian.</p>
+            <p>- Có 2 trường hợp sử dụng:</p>
+            <ul>
+                <li>
+                    <b>Data migration</b>: Snowcone, Snowball Edge, Snowmobile
+                </li>
+                <li>
+                    <b>Edge computing</b>: Snowcone, Snowball Edge
+                </li>
+            </ul>
             <p>- Hiện tại có 3 loại sau: </p>
             <table class="table table-bordered">
-                <thead>
-                    
+                <thead class="text-center bg-info">
+                    <tr>
+                        <th rowspan="2" class="align-middle bg-secondary">Trường hợp sử dụng</th>
+                        <th rowspan="2" class="align-middle bg-secondary">Thông số</th>
+                        <th colspan="2" class="align-middle">Snowcone</th>
+                        <th colspan="2" class="align-middle">Snowball Edge</th>
+                        <th rowspan="2" class="align-middle">Snowmobile</th>
+                    </tr>
+                    <tr>
+                        <th class="align-middle">Snowcone</th>
+                        <th class="align-middle">Snowcone SSD</th>
+                        <th class="align-middle">Storage Optimized</th>
+                        <th class="align-middle">Compute Optimized</th>
+                    </tr>
                 </thead>
+                <tbody class="bg-white">
+                    <tr>
+                        <td>Data migration</td>
+                        <td>Storage Capacity</td>
+                        <td>8 TB HDD</td>
+                        <td>14 TB SSD</td>
+                        <td>80 TB HDD</td>
+                        <td></td>
+                        <td>< 100 PB</td>
+                    </tr>
+                </tbody>
             </table>
+        </div>
+        <div>
+            <i>Còn tiếp...</i>
         </div>
     </div>
     <script src="https://utteranc.es/client.js" repo="hinhphan/hinhphan.github.io-comments" issue-term="A0016" theme="github-light" crossorigin="anonymous" async></script>
