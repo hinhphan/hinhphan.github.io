@@ -1,6 +1,6 @@
 # hinhphan.github.io
 
-Build with gulp:
+Build with gulp && twig:
 
 1. npm install
 2. npm install gulp-cli -g
