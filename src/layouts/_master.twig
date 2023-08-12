@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="/assets/themes/AdminLTE/plugins/hover/hover-min.css" />
     <!-- Theme style -->
     <link rel="stylesheet" href="/assets/themes/AdminLTE/dist/css/adminlte.min.css" />
+    <!-- Ekko lightbox -->
+    <link rel="stylesheet" href="/assets/themes/AdminLTE/plugins/ekko-lightbox/ekko-lightbox.css">
 
     <link rel="stylesheet" href="/assets/css/common.css">
   </head>
@@ -52,8 +54,21 @@
     <script src="/assets/themes/AdminLTE/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
     <script src="/assets/themes/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Ekko lightbox -->
+    <script src="/assets/themes/AdminLTE/plugins/ekko-lightbox/ekko-lightbox.min.js"></script>
     <!-- AdminLTE App -->
     <script src="/assets/themes/AdminLTE/dist/js/adminlte.min.js"></script>
+
+    <script>
+    $(function () {
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox({
+          alwaysShowClose: true
+        });
+      });
+    })
+    </script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8CLK65Q55B"></script>
