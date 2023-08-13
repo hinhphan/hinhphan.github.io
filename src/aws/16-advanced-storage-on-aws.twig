@@ -49,7 +49,7 @@
             </ul>
             <div class="card">
                 <div class="card-header">
-                    <h3 class="mb-0">FSx for Windows File Server</h3>
+                    <h4 class="mb-0">FSx for Windows File Server</h4>
                 </div>
                 <div class="card-body">
                     <ul>
@@ -58,10 +58,43 @@
                         <li>Tích hợp <a href="https://en.wikipedia.org/wiki/Active_Directory" target="_blank" rel="noopener noreferrer">Microsoft Active Directory</a>, ACLs (Access Control List), user quotas (Hạn ngạch người dùng)</li>
                         <li>Có thể <b>mounted</b> vào Linux EC2</li>
                         <li>Hỗ trợ <b>Microsoft's Distributed File System (DFS) Namespaces</b> (group files across multiple FS)</li>
-                        <li></li>
+                        <li>Scale up to 10s of GB/s, millions of IOPS, 100s PB of data (chỗ này mình thấy dùng tiếng Việt cứ cấn cấn nên giữ nguyên :v)</li>
+                        <li>
+                            Lựa chọn lưu trữ:
+                            <ul>
+                                <li><b>SSD</b>: Phù hợp với các công việc cần độ trễ thấp (latency) (databases, media processing, data analytics,...)</li>
+                                <li><b>HDD</b>: Khối lượng công việc lớn (home directory, CMS,...)</li>
+                            </ul>
+                        </li>
+                        <li>Có thể truy cập từ <b>on-premises</b> thông qua <b>VPN</b> or <b>Direct Connect</b></li>
+                        <li>Có thể <b>Multi-AZ (high availability)</b></li>
+                        <li>Được backup hàng ngày đến S3</li>
                     </ul>
                 </div>
-            </div>   
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="mb-0">FSx for Lustre</h4>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Tên <b>Lustre</b> là kết hợp giữa <b>Linux</b> và <b>Cluster</b></li>
+                        <li>Là hệ thống tệp phân tán song song (a type of parallel distributed file system) (mình cũng chưa hiểu chỗ này lắm 😂)</li>
+                        <li>Dùng cho tính toán có quy mô lớn (large-scale computing): Machine Learning, High Performance Computing (HPC), Video Processing, Financial Modeling, Electronic Design Automation,...</li>
+                        <li>Scales up to 100s GB/s, millions of IOPS, sub-ms latencies</li>
+                        <li>
+                            Lựa chọn lưu trữ:
+                            <ul>
+                                <li><b>SSD</b>: Độ trễ thấp (low latency), IOPS (In Out Per Second) intensive (chuyên sâu) workloads, truy cập tệp tin nhỏ và ngẫu nhiên</li>
+                                <li><b>HDD</b>: Khối công việc lớn, xử lý tuần tự (large & sequential)</li>
+                            </ul>
+                        </li>
+                        <li>Có thể <b>tích hợp</b> với <b>S3</b>: <b>READ</b> và <b>WRITE</b> S3 thông qua FSx</li>
+                        <li>Có thể sử dụng ở các máy on-premises thông qua VPN hoặc Direct Connect</li>
+                        
+                    </ul>
+                </div>
+            </div>
         </div>
         <div>
             <i>Còn tiếp...</i>
