@@ -91,6 +91,27 @@
                         </li>
                         <li>Có thể <b>tích hợp</b> với <b>S3</b>: <b>READ</b> và <b>WRITE</b> S3 thông qua FSx</li>
                         <li>Có thể sử dụng ở các máy on-premises thông qua VPN hoặc Direct Connect</li>
+                        <li>
+                            Các phương án triển khai:
+                            <ul>
+                                <li>Scratch File System</li>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <ul>
+                                            <li>Lưu trữ tạm thời (Temporary Storage)</li>
+                                            <li>Dữ liệu không được sao chép (not replicated), vì thế nếu nơi lưu lỗi là coi như xong...mất hết (not persist)</li>
+                                            <li>High burst (6x faster, 200MBps per TiB)</li>
+                                            <li>Usecase: xử lý trong thời gian ngắn (short-term processing), tối ưu chi phí (optimize costs)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <a href="../assets/images/a0016_01.png" data-toggle="lightbox" data-title="">
+                                            <img src="../assets/images/a0016_01.png" class="img-fluid mb-2" alt="Snow family"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
                         
                     </ul>
                 </div>
