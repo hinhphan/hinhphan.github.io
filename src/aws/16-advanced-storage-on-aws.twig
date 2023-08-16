@@ -92,27 +92,39 @@
                         <li>Có thể <b>tích hợp</b> với <b>S3</b>: <b>READ</b> và <b>WRITE</b> S3 thông qua FSx</li>
                         <li>Có thể sử dụng ở các máy on-premises thông qua VPN hoặc Direct Connect</li>
                         <li>
-                            Các phương án triển khai:
+                            Các phương án triển khai (<a href="https://docs.aws.amazon.com/fsx/latest/LustreGuide/using-fsx-lustre.html" target="_blank" rel="noopener noreferrer">Xem thêm</a>):
                             <ul>
-                                <li>Scratch File System</li>
-                                <div class="row">
-                                    <div class="col-12 col-md-6">
-                                        <ul>
-                                            <li>Lưu trữ tạm thời (Temporary Storage)</li>
-                                            <li>Dữ liệu không được sao chép (not replicated), vì thế nếu nơi lưu lỗi là coi như xong...mất hết (not persist)</li>
-                                            <li>High burst (6x faster, 200MBps per TiB)</li>
-                                            <li>Usecase: xử lý trong thời gian ngắn (short-term processing), tối ưu chi phí (optimize costs)</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <a href="../assets/images/a0016_01.png" data-toggle="lightbox" data-title="">
-                                            <img src="../assets/images/a0016_01.png" class="img-fluid mb-2" alt="Snow family"/>
-                                        </a>
-                                    </div>
-                                </div>
+                                <li>
+                                    Scratch File System 
+                                    <ul>
+                                        <li>Lưu trữ tạm thời (<b>Temporary</b> Storage)</li>
+                                        <li>Dữ liệu không được sao chép (<b>not replicated</b>), vì thế nếu nơi lưu lỗi là coi như xong...mất hết (not persist)</li>
+                                        <li>High burst (6x faster, 200MBps per TiB)</li>
+                                        <li>Usecase: Xử lý trong thời gian ngắn (<b>short-term processing</b>), tối ưu chi phí (<b>optimize costs</b>)</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Persistent File System
+                                    <ul>
+                                        <li>Lưu trữ dài hạn (<b>Long-term</b> storage)</li>
+                                        <li>Dữ liệu được sao chép ở trong cùng AZ (<b>replicated</b>)</li>
+                                        <li>Vì thế nếu có tệp tin bị lỗi sẽ được thay thế nhanh chóng (Replace failed files within minutes)</li>
+                                        <li>Usecase: Xử lý trong thời gian dài (<b>long-term processing</b>), các dữ liệu quan trọng (<b>sensitive data</b>)</li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                         
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="mb-0">FSx for NetApp ONETAP</h4>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li></li>
                     </ul>
                 </div>
             </div>
